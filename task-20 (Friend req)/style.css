@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 4rem;
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    background-color: lightgray;
+    
+}
+
+.card{
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.card h5{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.card h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: red;
+}
+
+.card button{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 3rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgba(249, 129, 129, 0.956);
+    color: white;
+    transition: all 0.3s ease;
+
+}
+
+.card button:hover{
+    background-color: rgba(249, 62, 62, 0.823);
+}
+
+.card button:active{
+    transform: scale(0.9);
+}
